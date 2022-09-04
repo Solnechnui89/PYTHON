@@ -40,24 +40,41 @@
 # Напишите программу, которая по заданному номеру четверти, 
 # показывает диапазон возможных координат точек в этой четверти (x и y). 
 
-QuarterNumber = int(input('Введите номер четверти: '))
+# QuarterNumber = int(input('Введите номер четверти: '))
 
-if QuarterNumber > 0 and QuarterNumber < 2:
-    X = list(range(1, 11))
-    Y = list(range(1, 11))
-    print(f'Координаты точки в 1ой четверти принимают следующие значения:\n X={X} \n Y={Y}')
+# if QuarterNumber > 0 and QuarterNumber < 2:
+#     X = list(range(1, 11))
+#     Y = list(range(1, 11))
+#     print(f'Координаты точки в 1ой четверти принимают следующие значения:\n X={X} \n Y={Y}')
 
-elif QuarterNumber > 1 and QuarterNumber < 3:
-    X = list(range(-10, 0))
-    Y = list(range(1, 11))
-    print(f'Координаты точки во 2ой четверти принимают следующие значения:\n X={X} \n Y={Y}')
+# elif QuarterNumber > 1 and QuarterNumber < 3:
+#     X = list(range(-10, 0))
+#     Y = list(range(1, 11))
+#     print(f'Координаты точки во 2ой четверти принимают следующие значения:\n X={X} \n Y={Y}')
 
-elif QuarterNumber > 2 and QuarterNumber < 4:
-    X = list(range(-10, 0))
-    Y = list(range(-10, 0))
-    print(f'Координаты точки в 3ей четверти принимают следующие значения:\n X={X} \n Y={Y}')
+# elif QuarterNumber > 2 and QuarterNumber < 4:
+#     X = list(range(-10, 0))
+#     Y = list(range(-10, 0))
+#     print(f'Координаты точки в 3ей четверти принимают следующие значения:\n X={X} \n Y={Y}')
 
-elif QuarterNumber > 3 and QuarterNumber < 5:
-    X = list(range(1, 11))
-    Y = list(range(-10, 0))
-    print(f'Координаты точки в 4ой четверти принимают следующие значения:\n X={X} \n Y={Y}')
+# elif QuarterNumber > 3 and QuarterNumber < 5:
+#     X = list(range(1, 11))
+#     Y = list(range(-10, 0))
+#     print(f'Координаты точки в 4ой четверти принимают следующие значения:\n X={X} \n Y={Y}')
+
+
+# ЗАДАЧА 5: 
+# Напишите программу, которая принимает на вход координаты двух точек 
+# и находит расстояние между ними в 2D пространстве.
+# Пример:
+# A(3,6) B(2,1) → 5,09
+# A(7,-5) B(1,-1) → 7,21
+
+X1 = int(input('Введите координату X1: '))
+Y1 = int(input('Введите координату Y1: '))
+X2 = int(input('Введите координату X2: '))
+Y2 = int(input('Введите координату Y2: '))
+import math
+distance = math.sqrt((X2-X1)**2+(Y2-Y1)**2)
+
+print('Расстояние между точками в 2D пространстве:'+ str(round(distance,2)))
