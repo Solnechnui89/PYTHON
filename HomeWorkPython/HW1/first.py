@@ -35,3 +35,29 @@
 # elif X > 0 and Y < 0:
 #     print('Точка находится в 4-ой четверти плоскости')
    
+
+# ЗАДАЧА 4:
+# Напишите программу, которая по заданному номеру четверти, 
+# показывает диапазон возможных координат точек в этой четверти (x и y). 
+
+QuarterNumber = int(input('Введите номер четверти: '))
+
+if QuarterNumber > 0 and QuarterNumber < 2:
+    X = list(range(1, 11))
+    Y = list(range(1, 11))
+    print(f'Координаты точки в 1ой четверти принимают следующие значения:\n X={X} \n Y={Y}')
+
+elif QuarterNumber > 1 and QuarterNumber < 3:
+    X = list(range(-10, 0))
+    Y = list(range(1, 11))
+    print(f'Координаты точки во 2ой четверти принимают следующие значения:\n X={X} \n Y={Y}')
+
+elif QuarterNumber > 2 and QuarterNumber < 4:
+    X = list(range(-10, 0))
+    Y = list(range(-10, 0))
+    print(f'Координаты точки в 3ей четверти принимают следующие значения:\n X={X} \n Y={Y}')
+
+elif QuarterNumber > 3 and QuarterNumber < 5:
+    X = list(range(1, 11))
+    Y = list(range(-10, 0))
+    print(f'Координаты точки в 4ой четверти принимают следующие значения:\n X={X} \n Y={Y}')
